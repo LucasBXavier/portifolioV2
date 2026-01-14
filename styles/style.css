@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=SUSE:wght@100..800&display=swap");
+
+:root {
+    --cor--principal: #212121;
+    --cor--secundaria: #f6f6f6;
+    --cor--terciaria: #22d4fd;
+    --cor--hover: #2a2a2a;
+    --cor--texto: #6b7280;
+    --text-normal: #374151;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'SUSE', sans-serif;
+
+}
+
+body {
+    background-color: var(--cor--principal);
+    overflow-x: hidden;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+header {
+    margin-bottom: 10rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--cor--principal);
+    border-bottom: 2px solid var(--cor--terciaria);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--cor--secundaria);
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+span {
+    color: var(--cor--terciaria);
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.links a {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--cor--secundaria);
+    text-decoration: none;
+    font-family: "SUSE", sans-serif;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    background: linear-gradient(270deg,
+            var(--cor--terciaria) 0%,
+            var(--cor--principal) 100%);
+    transform-origin: bottom right;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.links a:hover {
+    cursor: pointer;
+}
+
+.ofcanvas-btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 38px;
+    z-index: 990;
+}
+
+/* Exibe o botão off-canvas em dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .ofcanvas-btn {
+        display: block;
+    }
+}
+
+h1 {
+    color: var(--cor--terciaria);
+    margin-bottom: 45px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--cor--terciaria);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Animação do botão off-canvas */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-315deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+    transform: translate(0, 11px) rotate(-315deg);
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(315deg);
+}
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 39, 39, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(39, 39, 39, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 980;
+}
+
+.offcanvas.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.offcanvas .offcanvas-content {
+    text-align: center;
+    color: white;
+}
+
+.offcanvas .offcanvas-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offcanvas .offcanvas-content ul li {
+    margin: 20px 0;
+}
+
+.offcanvas .offcanvas-content ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.offcanvas .offcanvas-content ul li a:hover {
+    color: #a875ff;
+}
+
+section {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.badge {
+    background-color: rgba(34, 212, 253, 0.15);
+    color: var(--cor--terciaria);
+    padding: 18px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 26px;
+    margin-top: 26px;
+    display: inline-block;
+    border: 1px solid var(--cor--terciaria);
+    animation: floatBadge 2s ease-in-out infinite;
+}
+
+.badge-estatico {
+    background-color: rgba(34, 212, 253, 0.15);
+    color: var(--cor--terciaria);
+    padding: 18px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 26px;
+    margin-top: 26px;
+    display: inline-block;
+}
+
+@keyframes floatBadge {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5.9561px);
+    }
+}
+
+.nome {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 62px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--cor--terciaria);
+    /* background: linear-gradient(177deg, var(--cor--terciaria), var(--cor--principal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.subtext {
+    text-align: center;
+    color: var(--cor--texto);
+    font-size: 1.125rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.role {
+    font-size: 2.5rem;
+    color: var(--cor--secundaria);
+    margin: 24px;
+    height: 40px;
+}
+
+@keyframes tw-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.btn-primary {
+    background-color: var(--cor--terciaria);
+    color: #0a0a0a;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 60px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(34, 212, 253, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #1ed4fc;
+    box-shadow: 0 4px 16px rgba(34, 212, 253, 0.5);
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 1rem;
+    color: var(--cor--terciaria);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.text-intro {
+    font-size: 2.5rem;
+    color: var(--cor--secundaria);
+    margin-bottom: 2rem;
+}
+
+.dif {
+    color: var(--cor--terciaria);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: var(--cor--hover);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    color: var(--cor--secundaria);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.btn-download {
+    text-align: center;
+    margin-top: 20px;
+    background-color: var(--cor--terciaria);
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    width: 25%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+
+    a {
+        text-decoration: none;
+        color: #0a0a0a;
+    }
+}
+
+.btn-download:hover {
+    background-color: #1ed4fc;
+    box-shadow: 0 4px 16px rgba(34, 212, 253, 0.5);
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+    color: var(--cor--terciaria);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding: 40px 20px;
+    list-style: none;
+}
+
+.footer-content {
+    text-align: center;
+    color: var(--cor--texto);
+    font-size: 0.875rem;
+}
+
+.social-links {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    i {
+        font-size: 1.5rem;
+        color: var(--cor--texto);
+        transition: color 0.3s ease-in-out;
+    }
+
+    i:hover {
+        color: var(--cor--terciaria);
+    }
+}
