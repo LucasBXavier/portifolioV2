@@ -199,7 +199,14 @@ h1 {
     color: #a875ff;
 }
 
-section {
+.main-section {
+    padding: 0 20px 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections{
     padding: 0 20px 60px 20px;
     display: flex;
     align-items: center;
@@ -377,7 +384,6 @@ section {
     padding: 12px;
     border: none;
     border-radius: 12px;
-    width: 25%;
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
@@ -405,7 +411,7 @@ hr {
 }
 
 footer {
-    padding: 40px 20px;
+    padding: 0 20px 30px 20px;
     list-style: none;
 }
 
@@ -449,6 +455,32 @@ footer {
     i:hover {
         color: var(--cor--terciaria);
     }
+}
+
+.social-links-about {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    i {
+        font-size: 2rem;
+        color: var(--cor--texto);
+        transition: color 0.3s ease-in-out;
+    }
+
+    i:hover {
+        color: var(--cor--terciaria);
+    }
+}
+
+.btns-about{
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 @keyframes slideUpFade {

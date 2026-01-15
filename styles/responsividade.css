@@ -24,6 +24,15 @@
     padding: 18px 40px;
   }
 
+  .ofcanvas-btn {
+    display: block;
+    top: 28%;
+  }
+
+  .links{
+    display: none;
+  }
+
   .nome {
     font-size: 52px;
   }
@@ -51,6 +60,10 @@
 @media (max-width: 992px) {
   header {
     margin-bottom: 7rem;
+  }
+
+  .logo{
+    font-size: 2.2rem;
   }
 
   .links {
@@ -83,11 +96,15 @@
 /* ----------- TABLET PORTRAIT (≤ 768px) ----------- */
 @media (max-width: 768px) {
   .main-section {
-    padding:  60px 20px;
+    padding:  0 20px 60px 20px;
   }
 
   .navbar {
     padding: 16px 24px;
+  }
+
+  .logo{
+    font-size: 2rem;
   }
 
   .ofcanvas-btn {
@@ -101,7 +118,13 @@
 
   .role {
     height: auto;
+    font-size: 2rem;
   }
+
+  .btns-about {
+    gap: 25px;
+    
+  } 
 
   .text-intro {
     font-size: 2rem;
@@ -128,6 +151,10 @@
 
 /* ----------- MOBILE LARGE (≤ 576px) ----------- */
 @media (max-width: 576px) {
+
+  .logo{
+    font-size: 1.8rem;
+  }
 
   .badge,
   .badge-estatico {
@@ -173,7 +200,15 @@
   }
 
   .nome {
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  .logo{
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 1.8rem;
   }
 
   .text-intro {
@@ -185,7 +220,7 @@
   }
 
   .btn-download {
-    width: 80%;
+    width: auto;
   }
 
   .skill-header {
