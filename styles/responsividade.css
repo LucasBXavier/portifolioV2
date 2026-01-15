@@ -1,17 +1,109 @@
-@media (max-width: 1024px) {
+/* ===============================
+   RESPONSIVIDADE GLOBAL
+   =============================== */
+
+/* ----------- LARGE DESKTOP (≤ 1440px) ----------- */
+@media (max-width: 1440px) {
   .navbar {
-    padding: 20px 40px;
+    padding: 20px 60px;
   }
 
-  .links {
-    gap: 24px;
+  .skill-grid {
+    width: 110%;
+    gap: 80px;
+  }
+
+  .skills-card {
+    width: 110%;
+  }
+}
+
+/* ----------- NOTEBOOK (≤ 1200px) ----------- */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 18px 40px;
   }
 
   .nome {
-    font-size: 48px;
+    font-size: 52px;
   }
 
   .role {
+    font-size: 2.1rem;
+  }
+
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 60px;
+  }
+
+  .skills-card {
+    width: 100%;
+  }
+
+  .card {
+    max-width: 700px;
+  }
+}
+
+/* ----------- TABLET LANDSCAPE (≤ 992px) ----------- */
+@media (max-width: 992px) {
+  header {
+    margin-bottom: 7rem;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .nome {
+    font-size: 46px;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    margin: 3rem 0;
+  }
+
+  .btn-primary {
+    padding: 18px 36px;
+    font-size: 1.1rem;
+  }
+
+  .skill-grid {
+    gap: 50px;
+  }
+
+  .btn-download {
+    width: 40%;
+  }
+}
+
+/* ----------- TABLET PORTRAIT (≤ 768px) ----------- */
+@media (max-width: 768px) {
+  .main-section {
+    padding:  60px 20px;
+  }
+
+  .navbar {
+    padding: 16px 24px;
+  }
+
+  .ofcanvas-btn {
+    top: 25%;
+  }
+
+  .nome {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .role {
+    height: auto;
+  }
+
+  .text-intro {
     font-size: 2rem;
   }
 
@@ -20,71 +112,53 @@
     font-size: 1.15rem;
   }
 
-  .btn-download {
-    width: 40%;
-  }
-}
-
-/* =========================
-   TABLETS / MOBILE
-   ========================= */
-@media (max-width: 768px) {
-  header {
-    margin-bottom: 6rem;
+  .skill-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
-  .offcanvas-content ul li a {
-    font-size: 1.2rem; /* Tamanho menor em dispositivos móveis */
-  }
-  .navbar {
-    padding: 35px 20px 15px; /* Reduz o padding em dispositivos móveis */
-  }
-
-  .links {
-    display: none;
-    font-size: 1em;
-  }
-  .logo {
-    font-size: 1.7em;
-  }
-
-  section {
-    padding: 40px 16px;
-  }
-
-  .nome {
-    font-size: 38px;
-  }
-
-  .subtext {
-    font-size: 1rem;
-    margin: 2.5rem 0;
-  }
-
-  .role {
-    font-size: 1.75rem;
-    height: auto;
-  }
-
-  .badge,
-  .badge-estatico {
-    padding: 12px 16px;
-    font-size: 0.75rem;
-  }
-
-  .btn-primary {
-    padding: 16px 28px;
-    font-size: 1.1rem;
-  }
-
-  .card {
-    padding: 28px;
-    font-size: 1.1rem;
+  .skills-card {
+    padding: 30px;
   }
 
   .btn-download {
     width: 60%;
+  }
+}
+
+/* ----------- MOBILE LARGE (≤ 576px) ----------- */
+@media (max-width: 576px) {
+
+  .badge,
+  .badge-estatico {
+    padding: 14px;
+    font-size: 0.75rem;
+  }
+
+  .subtext,
+  .subtext2 {
     font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 16px 30px;
+    font-size: 1rem;
+  }
+
+  .skills-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .skills-icon {
+    font-size: 1.7rem;
+  }
+
+  .social-links-hero {
+    gap: 22px;
+  }
+
+  .social-links-hero i {
+    font-size: 1.7rem;
   }
 
   hr {
@@ -92,57 +166,29 @@
   }
 }
 
-/* =========================
-   MOBILE PEQUENO
-   ========================= */
-@media (max-width: 480px) {
-  .offcanvas-content ul li a {
-    font-size: 1.2rem; /* Tamanho menor em dispositivos móveis */
-  }
+/* ----------- MOBILE SMALL (≤ 400px) ----------- */
+@media (max-width: 400px) {
   .navbar {
-    padding: 35px 20px 15px; /* Reduz o padding em dispositivos móveis */
-  }
-
-  .links {
-    display: none;
-    font-size: 1em;
-  }
-  .logo {
-    font-size: 1.7em;
+    padding: 14px 16px;
   }
 
   .nome {
-    font-size: 32px;
-  }
-
-  .role {
-    font-size: 1.4rem;
-    margin: 16px 0;
+    font-size: 30px;
   }
 
   .text-intro {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .card {
-    padding: 24px;
-    font-size: 1rem;
-  }
-
-  .btn-primary {
-    width: 100%;
-    text-align: center;
+    padding: 26px;
   }
 
   .btn-download {
-    width: 100%;
+    width: 80%;
   }
 
-  .arrow-down {
-    font-size: 0.875rem;
-  }
-
-  footer {
-    padding: 24px 16px;
+  .skill-header {
+    gap: 10px;
   }
 }

@@ -200,7 +200,7 @@ h1 {
 }
 
 section {
-    padding: 60px 20px;
+    padding: 0 20px 60px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,6 +238,8 @@ section {
     margin-bottom: 26px;
     margin-top: 26px;
     display: inline-block;
+    animation: slideUpFade 1s ease-out;
+
 }
 
 @keyframes floatBadge {
@@ -271,6 +273,13 @@ section {
     font-size: 1.125rem;
     margin-bottom: 4rem;
     margin-top: 4rem;
+}
+
+.subtext2 {
+    text-align: center;
+    color: var(--cor--texto);
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
 }
 
 .role {
@@ -313,7 +322,8 @@ section {
     margin-bottom: 40px;
     font-size: 1rem;
     color: var(--cor--terciaria);
-    animation: bounce 2s infinite;
+    animation: bounce 2s infinite,
+        slideUpFade 1s ease-out forwards;
 }
 
 @keyframes bounce {
@@ -334,7 +344,6 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 4rem;
 }
 
 .text-intro {
@@ -422,4 +431,142 @@ footer {
     i:hover {
         color: var(--cor--terciaria);
     }
+}
+
+.social-links-hero {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    i {
+        font-size: 2rem;
+        color: var(--cor--texto);
+        transition: color 0.3s ease-in-out;
+    }
+
+    i:hover {
+        color: var(--cor--terciaria);
+    }
+}
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===============================
+   REVEAL ONSCROLL + CASCATA AUTO
+   =============================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.reveal.is-visible {
+    animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.badge.reveal.is-visible {
+    animation:
+        slideUpFade 0.8s ease-out forwards,
+        floatBadge 2s ease-in-out infinite;
+    animation-delay: 0s, 0.8s;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin-top: 40px;
+    width: 125%;
+}
+
+/* ===============================
+   SKILL BAR ANIMATION
+   =============================== */
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    overflow: hidden;
+    background-color: rgba(124, 58, 237, 0.15);
+}
+
+.skill-bar-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #7c3aed, var(--cor--terciaria));
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* quando visível */
+.skill-bar-fill.animate {
+    width: var(--level);
+}
+
+.skills-category {
+    color: var(--cor--secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.skills-icon {
+    font-size: 2rem;
+}
+
+.skill-name {
+    font-weight: 600;
+    color: var(--cor--secundaria);
+}
+
+.skill-header {
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-header {
+    gap: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills-card {
+    border: 1px solid var(--cor--hover);
+    padding: 35px;
+    border-radius: 12px;
+    background-color: var(--cor--hover);
+    width: 120%;
+    transition: 0.4s ease;
+    h3{
+        margin-bottom: 0;
+    }
+}
+
+.skills-card:hover {
+    border: 1px solid var(--cor--terciaria);
+    box-shadow: 0 12px 32px rgba(34, 212, 253, 0.5);
+    transform: translateY(-5.9561px);
+}
+
+.skill-level {
+    font-weight: 500;
+    color: var(--cor--secundaria);
 }

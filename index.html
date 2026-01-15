@@ -24,11 +24,11 @@
                 </div>
                 <div class="links">
                     <a href="index.html">Home</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="">Serviços</a>
-                    <a href="">Projetos</a>
-                    <a href="">Skills</a>
-                    <a href="">Contato</a>
+                    <a href="./pages/sobremim.html">Sobre</a>
+                    <a href="./pages/servicos.html">Serviços</a>
+                    <a href="./pages/projetos.html">Projetos</a>
+                    <a href="./pages/skills.html">Skills</a>
+                    <a href="./pages/contato.html">Contato</a>
                 </div>
                 <div id="offcanvas-btn" class="ofcanvas-btn" onclick="toggleOffcanvas()">
                     <div class="bar1"></div>
@@ -41,11 +41,11 @@
                         <h1>Seja Bem-Vindo 😀</h1>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="">Serviços</a></li>
-                            <li><a href="">Projetos</a></li>
-                            <li><a href="">Skills</a></li>
-                            <li><a href="">Contato</a></li>
+                            <li><a href="./pages/sobremim.html">Sobre</a></li>
+                            <li><a href="./pages/servicos.html">Serviços</a></li>
+                            <li><a href="./pages/projetos.html">Projetos</a></li>
+                            <li><a href="./pages/skills.html">Skills</a></li>
+                            <li><a href="./pages/contato.html">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,41 +54,31 @@
 
     </header>
     <main>
-        <section>
+        <section class="main-section" data-reveal-group>
             <div class="hero" id="home">
                 <div class="hero-content">
-                    <div class="badge">🚀 Disponível para novos projetos!</div>
-                    <h1 class="nome">Lucas Boareto Xavier</h1>
-                    <h3 class="role">FullStack developer</h3>
-                    <p class="subtext">Transformo ideias complexas em código limpo, soluções eficientes e experiências
+                    <div class="badge reveal">🚀 Disponível para novos projetos!</div>
+                    <h1 class="nome reveal">Lucas Boareto Xavier</h1>
+                    <h3 class="role reveal">FullStack developer</h3>
+                    <p class="subtext reveal">Transformo ideias complexas em código limpo, soluções eficientes e
+                        experiências
                         digitais memoráveis.</p>
-                    <a href="#" class="btn-primary">Explorar Trabalhos <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="./pages/projetos.html" class="btn-primary reveal">Explorar Trabalhos <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="social-links-hero reveal">
+                    <a href="https://www.instagram.com/lucasboareto.dev/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lucas-boareto-6b3964216/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LucasBXavier"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
         </section>
-        <div class="arrow-down"><i class="fa-solid fa-arrow-down"></i></div>
-        <section id="sobre">
-            <div class="about-me">
-                <div class="badge-estatico">Sobre Mim</div>
-                <h1 class="text-intro">Conheça Minha História</h1>
-                <div class="card">
-                    <h1 class="dif">Quem sou?</h1>
-                    <p>Olá, sou desenvolvedor web, tenho 24 anos, atualmente fazendo
-                        faculdade de Ciência da Computação onde estou aprofundando meus conhecimentos em desenvolvimento
-                        de software. Iniciei minha carreira profissional em julho de 2023 e, desde então, tenho atuado
-                        no desenvolvimento de landing pages, sistemas simples e criação de templates reutilizaveis.
-                        Atualmente estou expandindo meus
-                        conhecimentos em Spring/Java. Meu foco é criar soluções eficientes e de qualidade no
-                        desenvolvimento frontend e backend.</p>
-                    <div class="btn-download"><a href="./assets/download/Lucas_Boareto_desenvolvedor.pdf" download>Download CV <i class="fa-solid fa-download"></i></a></div>
-                </div>
-            </div>
-        </section>
+        <!-- <div class="arrow-down reveal"><i class="fa-solid fa-arrow-down"></i></div> -->
     </main>
 
 
-    <footer>
-        <div class="footer-content">
+    <!-- <footer data-reveal-group>
+        <div class="footer-content reveal">
             <hr>
             <p>&copy; 2024 LucasBoareto.dev. Todos os direitos reservados.</p>
             <div class="social-links">
@@ -99,12 +89,12 @@
                 </li>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5ba8568aec.js" crossorigin="anonymous"></script>
-    <script src="./js/offcanvas.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
