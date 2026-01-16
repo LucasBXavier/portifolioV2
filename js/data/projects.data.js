@@ -4,7 +4,7 @@ const projetos = [
         nome: "Portfólio Pessoal",
         descricao: "Um site para mostrar meus projetos e habilidades como desenvolvedor web.",
         link: "https://lucasboareto.vercel.app/",
-        imagem: "portfolio.png",
+        imagem: "portifolio.png",
         tecnologias: ["HTML", "CSS", "JavaScript"]
     },
     {
@@ -12,7 +12,7 @@ const projetos = [
         nome: "Método LD",
         descricao: "Site voltado para venda de cursos online sobre desenvolvimento pessoal e profissional.",
         link: "https://vidasemclt.com.br/",
-        imagem: "metodoLD.png",
+        imagem: "vidaSemCLT.png",
         tecnologias: ["HTML", "CSS", "JavaScript"]
     },
     {
@@ -20,7 +20,7 @@ const projetos = [
         nome: "ToDo List API Rest", 
         descricao: "Uma API RESTful para gerenciar tarefas em uma lista de afazeres.",
         link: "https://github.com/LucasBXavier/ToDoList",
-        imagem: "todo.png",
+        imagem: "ToDoList.png",
         tecnologias: ["Spring", "Java", "H2 Database", "Lombok"]
     },
     {
@@ -28,7 +28,7 @@ const projetos = [
         nome: "LGPD",
         descricao: "Site institucional para falar sobre a Lei Geral de Proteção de Dados.",
         link: "https://rhoanbarioni.github.io/LGPD_Facul/index.html",
-        imagem: "lgpd.png",
+        imagem: "LGPD.png",
         tecnologias: ["HTML", "SCSS", "JavaScript"]
     },
     {
@@ -36,7 +36,7 @@ const projetos = [
         nome: "Busca CEP",
         descricao: "Uma aplicação simples para buscar endereços a partir do CEP utilizando uma API externa.",
         link: "https://lucasbxavier.github.io/busca-CEP/",
-        imagem: "buscacep.png",
+        imagem: "buscaCEP.png",
         tecnologias: ["HTML", "CSS", "JavaScript"]
     },
     {
@@ -57,11 +57,11 @@ const projetos = [
     },
     {
         id: 9,
-        nome: "Screen Sound",
-        descricao: "Sistema de cadastro de musicas e albuns com avaliação dos usuários.",
-        link: "https://github.com/LucasBXavier/Screen-Sound",
-        imagem: "sistemaCadastro.png",
-        tecnologias: ["C#"]
+        nome: "SmartClass",
+        descricao: "Uma API Rest para gerenciar o salas de aula de uma faculdade.",
+        link: "https://github.com/LucasBXavier/SmartClass",
+        imagem: "smartClass.png",
+        tecnologias: ["Spring", "Java", "Lombok", "JPA", "Hibernate", "Postgress"]
     }
 ];
 

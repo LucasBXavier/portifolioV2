@@ -261,6 +261,10 @@
     margin: 10px;
   }
 
+  .projeto-image img {
+    height: 180px;
+  }
+
 }
 
 /* ----------- MOBILE SMALL (≤ 400px) ----------- */
@@ -333,5 +337,21 @@
 
   .txt-azul {
     margin-right: 3px;
+  }
+
+  .projeto-image img {
+    height: 160px;
+  }
+
+  .servico-card i {
+    font-size: 2.4rem;
+  }
+
+  .servico-title {
+    font-size: 1.3rem;
+  }
+
+  .servico-description {
+    font-size: 0.95rem;
   }
 }
