@@ -1,0 +1,8 @@
+# Allow all well-behaved crawlers to index the site
+User-agent: *
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /private/
+Allow: /assets/
+Allow: /pages/
+Sitemap: https://lucasboareto.vercel.app/sitemap.xml

@@ -354,4 +354,8 @@
   .servico-description {
     font-size: 0.95rem;
   }
+
+  .itens-lista i{
+    font-size: 0.9rem;
+  }
 }
