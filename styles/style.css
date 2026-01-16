@@ -296,12 +296,6 @@ h1 {
     height: 40px;
 }
 
-@keyframes tw-blink {
-    50% {
-        opacity: 0;
-    }
-}
-
 .btn-primary {
     background-color: var(--cor--terciaria);
     color: #0a0a0a;
@@ -319,18 +313,6 @@ h1 {
 .btn-primary:hover {
     background-color: #1ed4fc;
     box-shadow: 0 4px 16px rgba(34, 212, 253, 0.5);
-}
-
-.arrow-down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 1rem;
-    color: var(--cor--terciaria);
-    animation: bounce 2s infinite,
-        slideUpFade 1s ease-out forwards;
 }
 
 @keyframes bounce {
@@ -749,7 +731,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
-    margin-top: 3rem;
 }
 
 .projeto-card {
@@ -814,7 +795,6 @@ footer {
 }
 
 .projeto-link {
-    margin-top: auto;
     align-items: center;
     font-weight: 500;
     text-decoration: none;
