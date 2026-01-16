@@ -47,19 +47,19 @@ const skills = [
       },
       {
         "name": "C#",
-        "level": 78
+        "level": 58
       },
       {
         "name": ".NET",
-        "level": 75
+        "level": 45
       },
       {
         "name": "MySQL",
-        "level": 80
+        "level": 65
       },
       {
         "name": "PostgreSQL",
-        "level": 82
+        "level": 65
       },
     ]
   },
