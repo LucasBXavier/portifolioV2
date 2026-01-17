@@ -44,7 +44,7 @@ const projetos = [
         nome: "GastroInfo",
         descricao: "Um site informativo sobre saúde digestiva e dicas para manter um sistema digestivo saudável.",
         link: "https://lucasbxavier.github.io/GastroInfo/",
-        imagem: "gastroinfo.png",
+        imagem: "gastroInfo.png",
         tecnologias: ["HTML", "CSS", "JavaScript"]
     },
     {
