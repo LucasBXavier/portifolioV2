@@ -1,43 +1,57 @@
 let isOffcanvasOpen = false;
 
-  function toggleOffcanvas() {
-    isOffcanvasOpen = !isOffcanvasOpen;
+function toggleOffcanvas() {
+  isOffcanvasOpen = !isOffcanvasOpen;
 
-    const offcanvas = document.getElementById('offcanvas');
-    const btn = document.getElementById('offcanvas-btn');
+  const offcanvas = document.getElementById('offcanvas');
+  const btn = document.getElementById('offcanvas-btn');
 
-    if (!offcanvas || !btn) return;
+  if (!offcanvas || !btn) return;
 
-    if (isOffcanvasOpen) {
-      offcanvas.classList.add('open');
-      btn.classList.add('change');
-    } else {
-      offcanvas.classList.remove('open');
-      btn.classList.remove('change');
-    }
+  if (isOffcanvasOpen) {
+    offcanvas.classList.add('open');
+    btn.classList.add('change');
+  } else {
+    offcanvas.classList.remove('open');
+    btn.classList.remove('change');
   }
+}
 
- document.addEventListener("DOMContentLoaded", () => {
-    const groups = document.querySelectorAll("[data-reveal-group]");
+function applyReveal(group, force = false) {
+  const items = group.querySelectorAll(".reveal");
 
-    const observer = new IntersectionObserver(
-        (entries, obs) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
+  items.forEach((el, index) => {
+    if (el.classList.contains("is-visible")) return;
 
-                const group = entry.target;
-                const items = group.querySelectorAll(".reveal");
+    el.style.animationDelay = force ? "0s" : `${index * 0.2}s`;
+    el.classList.add("is-visible");
+  });
+}
 
-                items.forEach((el, index) => {
-                    el.style.animationDelay = `${index * 0.2}s`;
-                    el.classList.add("is-visible");
-                });
+document.addEventListener("DOMContentLoaded", () => {
+  const groups = document.querySelectorAll("[data-reveal-group]");
+  const isMobile = window.innerWidth <= 768;
 
-                obs.unobserve(group);
-            });
-        },
-        { threshold: 0.2 }
-    );
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        applyReveal(entry.target);
+      });
+    },
+    {
+      threshold: isMobile ? 0.05 : 0.2
+    }
+  );
 
-    groups.forEach(group => observer.observe(group));
+  groups.forEach(group => {
+    observer.observe(group);
+
+    if (isMobile) {
+      const rect = group.getBoundingClientRect();
+      if (rect.top < window.innerHeight) {
+        applyReveal(group, true);
+      }
+    }
+  });
 });
