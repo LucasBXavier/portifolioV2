@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.innerHTML = `
       <div class="projeto-image">
         <img 
-          src="../../assets/images/${projeto.imagem}" 
+          src="../assets/images/${projeto.imagem}" 
           alt="Imagem do projeto ${projeto.nome}"
           loading="lazy"
         />
