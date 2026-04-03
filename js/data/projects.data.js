@@ -11,7 +11,7 @@ const projetos = [
         id: 2,  
         nome: "Método LD",
         descricao: "Site voltado para venda de cursos online sobre desenvolvimento pessoal e profissional.",
-        link: "https://vidasemclt.com.br/",
+        link: "https://vida-sem-clt.vercel.app/",
         imagem: "vidaSemCLT.png",
         tecnologias: ["HTML", "CSS", "JavaScript"]
     },
