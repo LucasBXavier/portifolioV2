@@ -1,54 +1,44 @@
-# Portifolio pessoal
+# 💼 Portfólio - Lucas Boareto
 
-## 📌 Descrição
-
-Este é o meu portifólio pessoal, onde apresento meus projetos, habilidades e experiências como desenvolvedor web. Sinta-se à vontade para explorar e conhecer mais sobre o meu trabalho!
+Bem-vindo ao meu portfólio profissional. Este é um projeto responsivo desenvolvido para apresentar meus trabalhos, habilidades e experiências como desenvolvedor web.
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🎯 Sobre o Projeto
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+Este portfólio foi desenvolvido como uma apresentação profissional do meu trabalho e trajetória como desenvolvedor. O site apresenta uma navegação intuitiva e responsiva, permitindo que visitantes conheçam meus projetos realizados, competências técnicas e informações de contato.
 
-## 📁 Estrutura do Projeto
+### ✨ Destaques
 
-```
-├── 📁 assets
-│   ├── 📁 download
-│   │   └── 📕 Lucas_Boareto_desenvolvedor.pdf
-│   ├── 📁 images
-│   │   ├── 🖼️ LGPD.png
-│   │   ├── 🖼️ ToDoList.png
-│   │   ├── 🖼️ buscaCEP.png
-│   │   ├── 🖼️ gastroInfo.png
-│   │   ├── 🖼️ portifolio.png
-│   │   ├── 🖼️ smartClass.png
-│   │   ├── 🖼️ springCloud.png
-│   │   └── 🖼️ vidaSemCLT.png
-│   └── 📄 favicon.ico
-├── 📁 js
-│   ├── 📁 data
-│   │   ├── 📄 projects.data.js
-│   │   └── 📄 skills.data.js
-│   ├── 📁 render
-│   │   ├── 📄 projetos.js
-│   │   └── 📄 skill.js
-│   └── 📄 script.js
-├── 📁 pages
-│   ├── 🌐 contato.html
-│   ├── 🌐 projetos.html
-│   ├── 🌐 servicos.html
-│   ├── 🌐 skills.html
-│   └── 🌐 sobremim.html
-├── 📁 styles
-│   ├── 🎨 responsividade.css
-│   └── 🎨 style.css
-├── 🌐 index.html
-└── 📝 readme.md
-```
+- **Interface Responsiva**: Funciona perfeitamente em dispositivos móveis, tablets e desktops
+- **Projetos em Destaque**: Galeria interativa apresentando os principais trabalhos desenvolvidos
+- **Seção de Habilidades**: Listagem clara das tecnologias e competências principais
+- **Página de Contato**: Formulário direto para propostas e oportunidades
+- **Design Limpo**: UX focada em clareza e profissionalismo
 
 ---
 
-## Link do projeto: [Site](https://lucasboareto.vercel.app/)
+## 📄 Funcionalidades
+
+✅ Home com apresentação profissional  
+✅ Seção de projetos com descrições e imagens  
+✅ Página sobre minhas habilidades técnicas  
+✅ Página de serviços oferecidos  
+✅ Formulário de contato funcional  
+✅ Currículo disponível para download  
+✅ Design totalmente responsivo  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5** - Estrutura semântica
+- **CSS3** - Estilização e responsividade
+- **JavaScript (ES6+)** - Interatividade e lógica dinâmica
+- **Vercel** - Hospedagem
+
+---
+
+## 🌐 Visite o Site
+
+[Acessar Portfólio](https://lucasboareto.vercel.app/)
