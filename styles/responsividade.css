@@ -9,12 +9,12 @@
   }
 
   .skill-grid {
-    width: 110%;
+    width: 100%;
     gap: 80px;
   }
 
   .skills-card {
-    width: 110%;
+    width: 100%;
   }
 }
 
@@ -84,12 +84,25 @@
     font-size: 1.1rem;
   }
 
+  .btn-secondary {
+    padding: 18px 36px;
+    font-size: 1.1rem;
+    margin-left: 16px;
+  }
+
   .skill-grid {
     gap: 50px;
   }
 
   .btn-download {
     width: 40%;
+  }
+
+  .btns-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
 
   .arrow {
@@ -136,6 +149,18 @@
   .btns-about {
     gap: 25px;
 
+  }
+
+  .btn-secondary {
+    padding: 16px 30px;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 14px;
+    width: min(100%, 320px);
+  }
+
+  .btn-primary {
+    width: min(100%, 320px);
   }
 
   .text-intro {
@@ -206,6 +231,15 @@
   .subtext,
   .subtext2 {
     font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: min(100%, 300px);
+  }
+
+  .btn-secondary {
+    margin-left: 0;
   }
 
   .btn-primary {

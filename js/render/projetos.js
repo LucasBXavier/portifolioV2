@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <h3 class="projeto-title">${projeto.nome}</h3>
 
         <p class="projeto-description">
-          ${projeto.descricao}
+          ${projeto.desafio ? `<strong class="projeto-description-title">Desafio:</strong> ${projeto.desafio}<br><br>` : ""}
+          ${projeto.solução ? `<strong class="projeto-description-title">Solução:</strong> ${projeto.solução}<br><br>` : ""}
         </p>
 
         <div class="projeto-techs">
