@@ -19,12 +19,13 @@ const projetos = [
     },
     {
         id: 3,
-        nome: "ToDo List API Rest",
-        desafio: "Desenvolver uma API RESTful para gerenciar tarefas em uma lista de afazeres.",
-        solução: "Criei uma API RESTful para gerenciar o cadastro e a atualização das tarefas, permitindo operações eficientes de criação, leitura, atualização e exclusão.",
-        link: "https://github.com/LucasBXavier/ToDoList",
-        imagem: "ToDoList.png",
-        tecnologias: ["Spring", "Java", "H2 Database", "Lombok"]
+        nome: "KeepTrack",
+        desafio: "Desenvolver um sistema completo para controle de manutenções, cadastro de clientes e carros, incluindo relatórios e alertas de manutenção.",
+        solução: "Criei um sistema para controle de manutenções, incluindo cadastro de clientes e carros, agendamento de serviços, relatórios e alertas de manutenção, utilizando Spring Boot para o backend e Next.js com React para o frontend. O sistema é seguro, escalável e fácil de usar.",
+        link: "https://keeptrack-front.vercel.app",
+        imagem: "keepTrack.png",
+        tecnologias: ["Spring", "Spring Data JPA", "Spring Security", "Swagger", "Java", "Lombok", "Hibernate", "PostgreSQL", "Next.js", "React", "TypeScript", "radix-ui", "AOS", "eslint", "ExcelJS", "jsPDF", "Sonner"]
+
     },
     {
         id: 4,
@@ -69,7 +70,16 @@ const projetos = [
         solução: "Criei uma API Restful para gerenciar o cadastro e a disponibilidade das salas de aula, permitindo agendamentos e consultas eficientes.",
         link: "https://github.com/LucasBXavier/SmartClass",
         imagem: "smartClass.png",
-        tecnologias: ["Spring", "Java", "Lombok", "JPA", "Hibernate", "Postgress"]
+        tecnologias: ["Spring", "Java", "Lombok", "JPA", "Hibernate", "PostgreSQL"]
+    },
+    {
+        id: 10,
+        nome: "ToDo List API Rest",
+        desafio: "Desenvolver uma API RESTful para gerenciar tarefas em uma lista de afazeres.",
+        solução: "Criei uma API RESTful para gerenciar o cadastro e a atualização das tarefas, permitindo operações eficientes de criação, leitura, atualização e exclusão.",
+        link: "https://github.com/LucasBXavier/ToDoList",
+        imagem: "ToDoList.png",
+        tecnologias: ["Spring", "Java", "H2 Database", "Lombok"]
     }
 ];
 
