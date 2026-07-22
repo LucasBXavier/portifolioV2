@@ -19,10 +19,10 @@ const projetos = [
     },
     {
         id: 3,
-        nome: "KeepTrack",
+        nome: "MAINTORA",
         desafio: "Desenvolver um sistema completo para controle de manutenções, cadastro de clientes e carros, incluindo relatórios e alertas de manutenção.",
         solução: "Criei um sistema para controle de manutenções, incluindo cadastro de clientes e carros, agendamento de serviços, relatórios e alertas de manutenção, utilizando Spring Boot para o backend e Next.js com React para o frontend. O sistema é seguro, escalável e fácil de usar.",
-        link: "https://keeptrack-front.vercel.app",
+        link: "https://maintora.com.br",
         imagem: "keepTrack.png",
         tecnologias: ["Spring", "Spring Data JPA", "Spring Security", "Swagger", "Java", "Lombok", "Hibernate", "PostgreSQL", "Next.js", "React", "TypeScript", "radix-ui", "AOS", "eslint", "ExcelJS", "jsPDF", "Sonner"]
 
