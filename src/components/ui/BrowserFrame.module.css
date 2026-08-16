@@ -1,0 +1,72 @@
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border-radius: 16px;
+  border: 1px solid var(--cor-borda-forte);
+  background: linear-gradient(160deg, #1b1b1b, #131313);
+  overflow: hidden;
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.85);
+  transition: transform 0.6s var(--ease-premium), box-shadow 0.6s ease;
+}
+
+.frame:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 40px 90px -28px rgba(0, 0, 0, 0.9), 0 0 0 1px var(--cor-terciaria);
+}
+
+.frame:hover .glowOverlay {
+  opacity: 1;
+}
+
+.chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cor-borda-forte);
+}
+
+.dots span:first-child {
+  background: var(--cor-terciaria);
+}
+
+.urlLabel {
+  font-size: 0.7rem;
+  color: var(--cor-texto);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.body {
+  position: relative;
+  height: calc(100% - 41px);
+  overflow: hidden;
+}
+
+.glowOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 0%, rgba(34, 212, 253, 0.12), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}

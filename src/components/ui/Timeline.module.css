@@ -1,0 +1,143 @@
+/* Vertical timeline */
+.vertical {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-left: 2rem;
+}
+
+.verticalLine {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(180deg, var(--cor-terciaria), var(--cor-borda) 85%);
+  opacity: 0.5;
+}
+
+.vStep {
+  position: relative;
+}
+
+.vDot {
+  position: absolute;
+  left: -2rem;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--cor-fundo);
+  border: 2px solid var(--cor-terciaria);
+  box-shadow: 0 0 10px 2px var(--glow-terciaria);
+}
+
+.vMeta {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--cor-terciaria);
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.vTitle {
+  font-size: 1.15rem;
+  color: var(--cor-secundaria);
+  margin-bottom: 0.4rem;
+  overflow-wrap: break-word;
+}
+
+.vDescription {
+  font-size: 0.92rem;
+  max-width: 46ch;
+}
+
+/* Horizontal timeline */
+.horizontal {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.horizontalLine {
+  position: absolute;
+  top: 2.55rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--cor-terciaria), var(--cor-borda) 90%);
+  opacity: 0.4;
+}
+
+.hStep {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hDot {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--cor-fundo);
+  border: 1px solid var(--cor-borda-forte);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hStep:hover .hDot {
+  border-color: var(--cor-terciaria);
+  box-shadow: 0 0 16px 2px var(--glow-terciaria);
+}
+
+.hDotNumber {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  color: var(--cor-terciaria);
+}
+
+.hTitle {
+  font-size: 1rem;
+  color: var(--cor-secundaria);
+  overflow-wrap: break-word;
+}
+
+.hDescription {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1100px) {
+  .horizontal {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.25rem 1.25rem;
+  }
+  .horizontalLine {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .horizontal {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .horizontal {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+}

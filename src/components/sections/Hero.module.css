@@ -1,0 +1,272 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  overflow: hidden;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.radial {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 900px;
+  max-width: 140vw;
+  background: radial-gradient(circle, rgba(34, 212, 253, 0.14) 0%, rgba(34, 212, 253, 0) 65%);
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--cor-terciaria);
+  box-shadow: 0 0 8px 2px var(--glow-terciaria);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: center;
+  gap: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: 999px;
+}
+
+.title {
+  align-self: stretch;
+  font-size: clamp(2.6rem, 5.4vw, 4.4rem);
+  color: var(--cor-secundaria);
+  line-height: 1.05;
+}
+
+.subtitle {
+  align-self: stretch;
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  color: var(--cor-secundaria);
+  font-weight: 500;
+}
+
+.subtitle strong {
+  color: var(--cor-secundaria);
+  font-weight: 700;
+}
+
+.sep {
+  color: var(--cor-terciaria);
+}
+
+.description {
+  max-width: 46ch;
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Visual composition */
+.visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+}
+
+.avatarRing {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+
+.avatarGlow {
+  position: absolute;
+  inset: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--glow-terciaria) 0%, transparent 70%);
+  filter: blur(6px);
+  opacity: 0.7;
+}
+
+.avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--cor-borda-forte);
+  background: linear-gradient(155deg, #1c1c1c 0%, #101010 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(246, 246, 246, 0.04), 0 20px 60px -20px rgba(0, 0, 0, 0.8);
+}
+
+.avatarMesh {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(34, 212, 253, 0.25), transparent 55%),
+    radial-gradient(circle at 75% 80%, rgba(34, 212, 253, 0.12), transparent 50%);
+}
+
+.avatarInitials {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  color: var(--cor-secundaria);
+  letter-spacing: 0.02em;
+}
+
+.codeCard {
+  position: absolute;
+  right: -4%;
+  bottom: -8%;
+  width: 230px;
+  padding: 1rem 1.1rem 1.2rem;
+  border-radius: 16px;
+  border: 1px solid var(--cor-borda-forte);
+  background: rgba(28, 28, 28, 0.65);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.codeDots {
+  display: flex;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.codeDots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cor-borda-forte);
+}
+
+.codeDots span:first-child {
+  background: var(--cor-terciaria);
+}
+
+.codeLine {
+  height: 7px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(246, 246, 246, 0.14), rgba(246, 246, 246, 0.05));
+}
+
+.badgeJava {
+  top: 4%;
+  left: -8%;
+}
+
+.badgeSpring {
+  top: 62%;
+  left: -14%;
+}
+
+.badgeArch {
+  top: 8%;
+  right: -10%;
+}
+
+.badgePostgres {
+  bottom: 6%;
+  right: -6%;
+}
+
+.badgeReact {
+  bottom: -4%;
+  left: 18%;
+}
+
+.scrollCue {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.25rem;
+  width: fit-content;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 1;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 32px;
+  background: linear-gradient(180deg, var(--cor-terciaria), transparent);
+}
+
+.scrollText {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--cor-texto);
+}
+
+@media (max-width: 1080px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+    text-align: center;
+  }
+  .content {
+    align-items: center;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .visual {
+    max-width: 380px;
+    margin-top: 3rem;
+    margin-inline: auto;
+  }
+  .badgePostgres,
+  .badgeReact {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 5.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .title {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+  .visual {
+    display: none;
+  }
+}

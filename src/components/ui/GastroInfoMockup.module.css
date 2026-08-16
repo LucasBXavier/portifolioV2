@@ -1,0 +1,99 @@
+.site {
+  height: 100%;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+
+.logoDot {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  background: rgba(34, 212, 253, 0.18);
+  border: 1px solid var(--cor-terciaria);
+  flex-shrink: 0;
+}
+
+.searchBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  color: var(--cor-texto);
+}
+
+.searchText {
+  font-size: 0.68rem;
+}
+
+.categories {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.category {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--cor-borda-forte);
+  background: rgba(34, 212, 253, 0.06);
+  color: var(--cor-secundaria);
+  font-size: 0.66rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-superficie);
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cardIcon {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: rgba(34, 212, 253, 0.14);
+  border: 1px solid var(--cor-terciaria);
+}
+
+.cardTitle {
+  height: 7px;
+  border-radius: 4px;
+  background: var(--cor-borda-forte);
+}
+
+.cardLine {
+  height: 5px;
+  border-radius: 4px;
+  background: var(--cor-borda);
+  width: 85%;
+}

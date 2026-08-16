@@ -1,0 +1,84 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 26% minmax(0, 1fr);
+  height: 100%;
+}
+
+.sidebar {
+  border-right: 1px solid var(--cor-borda);
+  padding: 1rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.sidebarDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: rgba(34, 212, 253, 0.18);
+  border: 1px solid var(--cor-terciaria);
+  margin-bottom: 0.4rem;
+}
+
+.sidebarItem {
+  height: 6px;
+  border-radius: 4px;
+  background: var(--cor-borda-forte);
+}
+
+.main {
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.6rem;
+  height: 45%;
+}
+
+.statCard {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 8px;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  padding: 6px;
+}
+
+.statBar {
+  width: 100%;
+  border-radius: 4px;
+  background: linear-gradient(180deg, var(--cor-terciaria), rgba(34, 212, 253, 0.15));
+}
+
+.tableRows {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+}
+
+.tableRow {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tableDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cor-borda-forte);
+  flex-shrink: 0;
+}
+
+.tableLine {
+  height: 6px;
+  border-radius: 4px;
+  background: var(--cor-borda-forte);
+}

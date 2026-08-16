@@ -1,0 +1,126 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 1px solid transparent;
+  background: transparent;
+  transition: background 0.5s ease, border-color 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+.scrolled {
+  background: rgba(22, 22, 22, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom-color: var(--cor-borda);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--cor-secundaria);
+  letter-spacing: 0.05em;
+}
+
+.dot {
+  color: var(--cor-terciaria);
+}
+
+.links {
+  display: flex;
+  gap: 2.25rem;
+}
+
+.link {
+  position: relative;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--cor-texto);
+  padding-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--cor-secundaria);
+}
+
+.link.active {
+  color: var(--cor-secundaria);
+}
+
+.indicator {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--cor-terciaria);
+  border-radius: 2px;
+  box-shadow: 0 0 8px 1px var(--glow-terciaria);
+}
+
+.ctaWrap {
+  display: flex;
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cor-secundaria);
+  padding: 0.4rem;
+}
+
+.mobileMenu {
+  display: none;
+  overflow: hidden;
+  border-top: 1px solid var(--cor-borda);
+  background: rgba(22, 22, 22, 0.96);
+  backdrop-filter: blur(16px);
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem clamp(1.5rem, 5vw, 3rem) 0.5rem;
+  gap: 1.25rem;
+}
+
+.mobileLinks a {
+  font-size: 1.05rem;
+  color: var(--cor-secundaria);
+  font-weight: 500;
+}
+
+.mobileCta {
+  display: block;
+  margin: 1.25rem clamp(1.5rem, 5vw, 3rem) 1.75rem;
+  padding: 0.9rem 1.5rem;
+  text-align: center;
+  border-radius: 999px;
+  background: var(--cor-terciaria);
+  color: #061217;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .links,
+  .ctaWrap {
+    display: none;
+  }
+  .menuBtn {
+    display: inline-flex;
+  }
+  .mobileMenu {
+    display: block;
+  }
+}

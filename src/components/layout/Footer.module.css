@@ -1,0 +1,61 @@
+.footer {
+  border-top: 1px solid var(--cor-borda);
+  padding: 3.5rem 0 2.5rem;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 420px;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--cor-secundaria);
+}
+
+.dot {
+  color: var(--cor-terciaria);
+}
+
+.message {
+  font-size: 0.85rem;
+  color: var(--cor-texto);
+}
+
+.social {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.social a {
+  font-size: 0.85rem;
+  color: var(--cor-texto);
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: var(--cor-terciaria);
+}
+
+.copy {
+  font-size: 0.78rem;
+  color: var(--cor-texto);
+}
+
+@media (max-width: 640px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

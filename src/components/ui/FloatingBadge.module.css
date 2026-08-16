@@ -1,0 +1,17 @@
+.badge {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--cor-borda-forte);
+  background: rgba(33, 33, 33, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+  box-shadow: 0 8px 30px -12px rgba(0, 0, 0, 0.6);
+  will-change: transform;
+}

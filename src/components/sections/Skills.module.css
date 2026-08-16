@@ -1,0 +1,77 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.span-backend,
+.span-frontend,
+.span-devops {
+  grid-column: span 2;
+}
+
+.span-database,
+.span-ai {
+  grid-column: span 1;
+}
+
+.panel {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--cor-borda-forte);
+  color: var(--cor-terciaria);
+  background: rgba(34, 212, 253, 0.06);
+  flex-shrink: 0;
+}
+
+.panelTitle {
+  font-size: 1.05rem;
+  color: var(--cor-secundaria);
+  overflow-wrap: break-word;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.methodologies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--cor-secundaria);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .span-backend,
+  .span-frontend,
+  .span-devops,
+  .span-database,
+  .span-ai {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,18 @@
+.title {
+  margin: 0;
+}
+
+.wrap {
+  display: inline;
+}
+
+.wordMask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.word {
+  display: inline-block;
+  will-change: transform;
+}
