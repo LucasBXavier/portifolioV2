@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Krona_One, SUSE } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const kronaOne = Krona_One({
   variable: "--font-krona",
@@ -58,6 +59,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={`${kronaOne.variable} ${suse.variable}`}>
       <body>{children}</body>
+      <Analytics />
     </html>
   );
 }
