@@ -92,6 +92,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={`${kronaOne.variable} ${suse.variable}`}>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="DrW6cNGKYPWv5Yh8bSjQQnqvHt2DUyOcLw4xMqiCigA"
+        />
+      </head>
       <body>{children}</body>
       <Analytics />
     </html>
