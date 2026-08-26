@@ -16,7 +16,7 @@ const suse = SUSE({
   display: "swap",
 });
 
-const siteUrl = "https://lucasboareto.dev";
+const siteUrl = "https://lucasboareto.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

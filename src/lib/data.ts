@@ -132,7 +132,8 @@ export const featuredTech = [
 export type ProjectVisual =
   | { type: "mockup" }
   | { type: "content-site" }
-  | { type: "telegram" };
+  | { type: "telegram" }
+  | { type: "sabor-pote" };
 
 export type Project = {
   id: string;
@@ -216,6 +217,28 @@ export const projects: Project[] = [
     tech: ["Node.js", "Telegram Bot API", "Google Sheets API", "XLSX"],
     github: "https://github.com/LucasBXavier/finance-bot",
     visual: { type: "telegram" },
+  },
+  {
+    id: "sabor-pote",
+    title: "Sabor & Pote",
+    tagline: "Controle de custo e lucro para bolos de pote e marmitas",
+    description:
+      "Landing page do Sabor & Pote, um sistema de controle de custos, receitas, vendas e lucro para quem produz e vende bolos de pote, marmitas e outros produtos em pequena escala.",
+    problem:
+      "Confeiteiras, marmiteiras e microempreendedores costumam precificar no chute, sem saber ao certo quanto cada receita custa nem qual é a margem real de lucro em cada venda.",
+    solution:
+      "Fluxo guiado que liga ingrediente → receita → preço de venda → venda registrada → financeiro, calculando custo por kg automaticamente e congelando preço e custo no momento de cada venda.",
+    impact:
+      "Visão clara do lucro líquido por dia, semana ou mês, com histórico financeiro que nunca é reescrito mesmo quando os preços das receitas mudam.",
+    features: [
+      "Cálculo automático de custo por kg a partir dos ingredientes",
+      "Assistente de criação de receitas com margem de lucro em tempo real",
+      "Registro de vendas com preço e custo travados no momento da venda",
+      "Relatório financeiro por período com lucro líquido detalhado",
+    ],
+    tech: ["Next.js", "Supabase", "TypeScript"],
+    demo: "https://lucasbxavier.github.io/sistemaFood-landing/",
+    visual: { type: "sabor-pote" },
   },
 ];
 
@@ -310,7 +333,7 @@ export const contactInfo = [
 ];
 
 export const socialLinks = [
-  { label: "GitHub", href: "https://github.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
+  { label: "GitHub", href: "https://github.com/LucasBXavier" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/lucas-boareto" },
   { label: "Instagram", href: "https://instagram.com/lucasboareto.dev" },
 ];

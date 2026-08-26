@@ -1,0 +1,164 @@
+.app {
+  height: 100%;
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+
+.logoDot {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34, 212, 253, 0.18);
+  border: 1px solid var(--cor-terciaria);
+  color: var(--cor-terciaria);
+  flex-shrink: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 0.32rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-superficie);
+  color: var(--cor-texto);
+  font-size: 0.62rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tabActive {
+  border-color: var(--cor-terciaria);
+  background: rgba(34, 212, 253, 0.1);
+  color: var(--cor-secundaria);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 0.7rem;
+  flex: 1;
+  min-height: 0;
+}
+
+.ingredients {
+  border-radius: 10px;
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-superficie);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.panelLabel {
+  font-size: 0.64rem;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+  margin-bottom: 0.15rem;
+}
+
+.ingredientRow {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.ingredientIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-hover);
+  border: 1px solid var(--cor-borda-forte);
+  color: var(--cor-texto);
+  flex-shrink: 0;
+}
+
+.ingredientName {
+  flex: 1;
+  font-size: 0.62rem;
+  color: var(--cor-texto);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ingredientPrice {
+  font-size: 0.6rem;
+  color: var(--cor-secundaria);
+  white-space: nowrap;
+}
+
+.summary {
+  border-radius: 10px;
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-superficie);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summaryLabel {
+  font-size: 0.62rem;
+  color: var(--cor-texto);
+}
+
+.summaryValue {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--cor-secundaria);
+}
+
+.marginBar {
+  height: 6px;
+  border-radius: 4px;
+  background: var(--cor-borda);
+  overflow: hidden;
+}
+
+.marginFill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, rgba(34, 212, 253, 0.4), var(--cor-terciaria));
+}
+
+.marginBadge {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  align-self: flex-start;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(34, 212, 253, 0.1);
+  border: 1px solid var(--cor-terciaria);
+  color: var(--cor-terciaria);
+  font-size: 0.62rem;
+  font-weight: 700;
+}

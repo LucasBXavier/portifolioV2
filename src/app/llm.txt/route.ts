@@ -10,7 +10,7 @@ Especialidades:
 - Arquitetura limpa e escalável
 - DevOps, Docker e CI/CD
 
-Site: https://lucasboareto.dev
+Site: https://lucasboareto.vercel.app
 GitHub: https://github.com/LucasBXavier
 `;
 

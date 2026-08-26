@@ -7,6 +7,7 @@ import { GithubIcon } from "@/components/icons/BrandIcons";
 import { ProjectMockup } from "./ProjectMockup";
 import { GastroInfoMockup } from "./GastroInfoMockup";
 import { TelegramMockup } from "./TelegramMockup";
+import { SaborPoteMockup } from "./SaborPoteMockup";
 import styles from "./ProjectShowcase.module.css";
 
 type ProjectShowcaseProps = {
@@ -36,6 +37,8 @@ export function ProjectShowcase({ project, index, reverse = false }: ProjectShow
           <GastroInfoMockup />
         ) : project.visual.type === "telegram" ? (
           <TelegramMockup />
+        ) : project.visual.type === "sabor-pote" ? (
+          <SaborPoteMockup />
         ) : (
           <ProjectMockup index={index} />
         )}
