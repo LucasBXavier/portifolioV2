@@ -14,6 +14,18 @@ export function Navbar() {
   const activeId = useActiveSection(navLinks.map((l) => l.href.replace("#", "")));
   const [open, setOpen] = useState(false);
 
+  const handleMobileNavigation = (href: string) => {
+    setOpen(false);
+
+    window.setTimeout(() => {
+      const target = document.querySelector(href);
+      if (!(target instanceof HTMLElement)) return;
+
+      window.history.pushState(null, "", href);
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 350);
+  };
+
   return (
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <nav className={`container ${styles.inner}`}>
@@ -69,13 +81,26 @@ export function Navbar() {
             <ul className={styles.mobileLinks}>
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} onClick={() => setOpen(false)}>
+                  <a
+                    href={link.href}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      handleMobileNavigation(link.href);
+                    }}
+                  >
                     {link.label}
                   </a>
                 </li>
               ))}
             </ul>
-            <a href="#contato" className={styles.mobileCta} onClick={() => setOpen(false)}>
+            <a
+              href="#contato"
+              className={styles.mobileCta}
+              onClick={(event) => {
+                event.preventDefault();
+                handleMobileNavigation("#contato");
+              }}
+            >
               Vamos conversar
             </a>
           </motion.div>
