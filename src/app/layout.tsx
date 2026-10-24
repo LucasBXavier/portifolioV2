@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Lucas Boareto",
   },
   description:
-    "Desenvolvedor Full Stack especialista em Java, Spring Boot, arquitetura de software e interfaces modernas com React e Next.js.",
+    "Desenvolvedor Full Stack especialista em Java, Spring Boot, arquitetura de software e interfaces modernas com React e Next.js. Fundador da DuckCo.",
   applicationName: "Lucas Boareto Portfolio",
   keywords: [
     "desenvolvedor full stack",
@@ -39,6 +39,10 @@ export const metadata: Metadata = {
     "api",
     "microserviços",
     "saas",
+    "DuckCo",
+    "sistemas sob medida",
+    "automações",
+    "consultoria de tecnologia",
   ],
   authors: [{ name: "Lucas Boareto Xavier" }],
   creator: "Lucas Boareto Xavier",

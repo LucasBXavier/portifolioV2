@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Section } from "@/components/ui/Section";
 import { Timeline } from "@/components/ui/Timeline";
-import { timelineSteps } from "@/lib/data";
+import { duckco, timelineSteps } from "@/lib/data";
 import styles from "./About.module.css";
 
 export function About() {
@@ -33,6 +33,14 @@ export function About() {
           <p>
             Também desenvolvo interfaces modernas utilizando React, Next.js e TypeScript, criando
             aplicações completas que unem desempenho, experiência do usuário e código limpo.
+          </p>
+
+          <p>
+            Em 2026 fundei a{" "}
+            <a href={duckco.url} target="_blank" rel="noopener" className={styles.link}>
+              DuckCo
+            </a>
+            , minha empresa de tecnologia que desenvolve sistemas, sites, automações e consultoria.
           </p>
 
           <p>

@@ -30,6 +30,12 @@
   font-size: 0.98rem;
 }
 
+.link {
+  color: var(--cor-terciaria);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 @media (max-width: 960px) {
   .grid {
     grid-template-columns: minmax(0, 1fr);

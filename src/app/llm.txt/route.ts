@@ -10,8 +10,12 @@ Especialidades:
 - Arquitetura limpa e escalável
 - DevOps, Docker e CI/CD
 
+Fundador da DuckCo, empresa de tecnologia que desenvolve sistemas, sites, automações e consultoria:
+https://duckco.dev.br
+
 Site: https://lucasboareto.vercel.app
 GitHub: https://github.com/LucasBXavier
+DuckCo: https://duckco.dev.br
 `;
 
   return new Response(body, {

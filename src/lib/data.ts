@@ -2,6 +2,7 @@ export const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Skills", href: "#skills" },
   { label: "Projetos", href: "#projetos" },
+  { label: "DuckCo", href: "#duckco" },
   { label: "Serviços", href: "#servicos" },
   { label: "Contato", href: "#contato" },
 ];
@@ -36,6 +37,12 @@ export const timelineSteps = [
     title: "Maintora (SaaS)",
     description:
       "Idealização e desenvolvimento de uma plataforma multi-tenant para o setor automotivo, com autenticação JWT e arquitetura escalável.",
+  },
+  {
+    year: "2026",
+    title: "Fundação da DuckCo",
+    description:
+      "Criação da minha empresa de tecnologia, com foco em sistemas, sites, automações e consultoria para o seu negócio",
   },
   {
     year: "2026",
@@ -242,6 +249,22 @@ export const projects: Project[] = [
   },
 ];
 
+export const duckco = {
+  name: "DuckCo",
+  url: "https://duckco.dev.br",
+  tagline: "Tecnologia com personalidade",
+  description:
+    "A DuckCo é a minha empresa de tecnologia. Criamos sistemas, sites, automações e consultoria para negócios que querem vender mais e perder menos tempo com tarefas manuais, com código sério e atendimento próximo.",
+  services: ["Sistemas", "Sites", "Automações", "Consultoria"],
+  logo: "/duckco/duck-bust.webp",
+  logoUrl: "https://duckco.dev.br/mascot/duck-bust.webp",
+  logoAlt: "Mascote da DuckCo: um pato de terno e óculos escuros",
+  instagram: "https://instagram.com/duckcotech",
+  linkedin: "https://linkedin.com/company/duckcotech",
+  facebook: "https://www.facebook.com/profile.php?id=61595189150661",
+  tiktok: "https://tiktok.com/@duckco",
+};
+
 export type Service = {
   icon: "backend" | "frontend" | "systems" | "consulting";
   title: string;
@@ -336,4 +359,5 @@ export const socialLinks = [
   { label: "GitHub", href: "https://github.com/LucasBXavier" },
   { label: "LinkedIn", href: "https://linkedin.com/in/lucas-boareto" },
   { label: "Instagram", href: "https://instagram.com/lucasboareto.dev" },
+  { label: "DuckCo", href: duckco.url },
 ];
